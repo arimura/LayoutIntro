@@ -1,5 +1,5 @@
 //
-//  RotateViewController.h
+//  AnchorViewController.h
 //  LayoutIntro
 //
 //  Copyright © 2018年 hormiga6. All rights reserved.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RotateViewController : UIViewController
+@interface AnchorViewController : UIViewController
 
 @end
 
