@@ -15,6 +15,7 @@
 		74E36CF721929EE2006E7D99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36CF621929EE2006E7D99 /* main.m */; };
 		74E36D0121929EE2006E7D99 /* LayoutIntroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36D0021929EE2006E7D99 /* LayoutIntroTests.m */; };
 		74E36D0C21929EE2006E7D99 /* LayoutIntroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36D0B21929EE2006E7D99 /* LayoutIntroUITests.m */; };
+		74E36D1B2192A63F006E7D99 /* RotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E36D1A2192A63F006E7D99 /* RotateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		74E36D0721929EE2006E7D99 /* LayoutIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E36D0B21929EE2006E7D99 /* LayoutIntroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutIntroUITests.m; sourceTree = "<group>"; };
 		74E36D0D21929EE2006E7D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74E36D192192A63F006E7D99 /* RotateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateViewController.h; sourceTree = "<group>"; };
+		74E36D1A2192A63F006E7D99 /* RotateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				74E36CE821929EDE006E7D99 /* AppDelegate.m */,
 				74E36CEA21929EDE006E7D99 /* ViewController.h */,
 				74E36CEB21929EDE006E7D99 /* ViewController.m */,
+				74E36D192192A63F006E7D99 /* RotateViewController.h */,
+				74E36D1A2192A63F006E7D99 /* RotateViewController.m */,
 				74E36CED21929EDE006E7D99 /* Main.storyboard */,
 				74E36CF021929EE2006E7D99 /* Assets.xcassets */,
 				74E36CF221929EE2006E7D99 /* LaunchScreen.storyboard */,
@@ -265,6 +270,7 @@
 				74E36CEC21929EDE006E7D99 /* ViewController.m in Sources */,
 				74E36CF721929EE2006E7D99 /* main.m in Sources */,
 				74E36CE921929EDE006E7D99 /* AppDelegate.m in Sources */,
+				74E36D1B2192A63F006E7D99 /* RotateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
