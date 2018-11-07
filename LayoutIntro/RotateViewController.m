@@ -20,6 +20,16 @@
     self.containerView.backgroundColor = [UIColor blueColor];
     [self.view addSubview:self.containerView];
     NSLog(@"viewDidLoad");
+    if(@available(iOS 11, *)){
+        NSLog(@"use safearea layout guide");
+        __auto_type guide = self.view.safeAreaLayoutGuide;
+        [self.containerView.topAnchor constraintEqualToAnchor:guide.topAnchor].active = true;
+        [self.containerView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = true;
+        [self.containerView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = true;
+        [self.containerView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = true;
+    }else{
+        [self setLayout1];
+    }
 }
 
 - (void)setLayout1{
