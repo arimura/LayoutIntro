@@ -15,6 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.containerView = [UIView new];
     self.containerView.translatesAutoresizingMaskIntoConstraints = NO;
     self.containerView.backgroundColor = [UIColor blueColor];
