@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1265" y="128"/>
         </scene>
-        <!--View Controller-->
+        <!--Anchor View Controller-->
         <scene sceneID="LpO-P0-LHf">
             <objects>
-                <viewController id="M2Z-Db-OAZ" sceneMemberID="viewController">
+                <viewController id="M2Z-Db-OAZ" customClass="AnchorViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q2J-X3-UAn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

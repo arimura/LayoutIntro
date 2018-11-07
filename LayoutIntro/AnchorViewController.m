@@ -8,24 +8,25 @@
 #import "AnchorViewController.h"
 
 @interface AnchorViewController ()
-
+@property (nonatomic) UIView *containerView;
 @end
 
 @implementation AnchorViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.containerView = [UIView new];
+    self.containerView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.containerView.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:self.containerView];
+    [self setupAnchor];
+    NSLog(@"viewDidLoad");
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupAnchor{
+    [self.containerView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
+    [self.containerView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
+    [self.containerView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
+    [self.containerView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
 }
-*/
-
 @end
