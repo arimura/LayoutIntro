@@ -9,6 +9,7 @@
 #import "RotateViewController.h"
 #import "AnchorViewController.h"
 
+
 @interface HomeTableViewController ()
 @property (nonatomic) NSArray *classNameList;
 @end
@@ -20,7 +21,7 @@
     self.classNameList = @[
                            NSStringFromClass([RotateViewController class]),
                            NSStringFromClass([AnchorViewController class]),
-                           ];
+                           ];
 }
 
 #pragma mark - Table view data source
