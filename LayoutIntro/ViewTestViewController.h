@@ -2,7 +2,6 @@
 //  ViewTestViewController.h
 //  LayoutIntro
 //
-//  Created by 有村　皓太郎 on 2019/08/21.
 //  Copyright © 2019 hormiga6. All rights reserved.
 //
 

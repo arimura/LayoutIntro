@@ -2,31 +2,72 @@
 //  ViewTestViewController.m
 //  LayoutIntro
 //
-//  Created by 有村　皓太郎 on 2019/08/21.
 //  Copyright © 2019 hormiga6. All rights reserved.
 //
 
 #import "ViewTestViewController.h"
 
 @interface ViewTestViewController ()
-
+@property (nonatomic) UIView *smallView1;
+@property (nonatomic) UIView *smallView2;
 @end
 
 @implementation ViewTestViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSLog(@"viewDidLoad");
+
+    //add view
+    self.smallView1 = [self generateSmallView];
+    self.smallView1.frame = CGRectMake(0, 0, self.smallView1.frame.size.width, self.smallView1.frame.size.height);
+    self.view.backgroundColor = UIColor.whiteColor;
+    self.smallView1.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.smallView1];
+
+    //add view
+    self.smallView2 = [self generateSmallView];
+    self.smallView2.frame = CGRectMake(10, 250, self.smallView2.frame.size.width, self.smallView2.frame.size.height);
+    self.view.backgroundColor = UIColor.whiteColor;
+    [self.view addSubview:self.smallView2];
+
+    //add constraint on view1
+    [NSLayoutConstraint constraintWithItem:self.smallView1
+                                 attribute:NSLayoutAttributeTop
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:self.topLayoutGuide
+                                 attribute:NSLayoutAttributeBottom
+                                multiplier:1
+                                  constant:40].active = YES;
+
+    [NSLayoutConstraint constraintWithItem:self.smallView1
+                                 attribute:NSLayoutAttributeHeight
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:nil
+                                 attribute:NSLayoutAttributeNotAnAttribute
+                                multiplier:1
+                                  constant:100].active = YES;
+
+    [NSLayoutConstraint constraintWithItem:self.smallView1
+                                 attribute:NSLayoutAttributeLeading
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:self.view
+                                 attribute:NSLayoutAttributeLeading
+                                multiplier:1
+                                  constant:40].active = YES;
+
+    [NSLayoutConstraint constraintWithItem:self.smallView1
+                                 attribute:NSLayoutAttributeWidth
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:nil
+                                 attribute:NSLayoutAttributeNotAnAttribute
+                                multiplier:1
+                                  constant:100].active = YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIView *)generateSmallView {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+    view.backgroundColor = [UIColor redColor];
+    return view;
 }
-*/
-
 @end

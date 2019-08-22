@@ -8,7 +8,7 @@
 #import "HomeTableViewController.h"
 #import "RotateViewController.h"
 #import "AnchorViewController.h"
-
+#import "ViewTestViewController.h"
 
 @interface HomeTableViewController ()
 @property (nonatomic) NSArray *classNameList;
@@ -18,10 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.classNameList = @[
-                           NSStringFromClass([RotateViewController class]),
+    self.classNameList = @[NSStringFromClass([RotateViewController class]),
                            NSStringFromClass([AnchorViewController class]),
-                           ];
+                           NSStringFromClass([ViewTestViewController class]),
+                           ];
 }
 
 #pragma mark - Table view data source
